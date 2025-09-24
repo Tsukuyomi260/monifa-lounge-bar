@@ -16,9 +16,7 @@
     "zustand": "^4.4.0",
     "lucide-react": "^0.292.0",
     "framer-motion": "^10.16.0",
-    "react-hot-toast": "^2.4.0",
-    "clsx": "^2.0.0",
-    "tailwind-merge": "^2.0.0"
+    "react-hot-toast": "^2.4.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.37",

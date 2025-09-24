@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { User, Mail, Phone, MapPin, Settings, Bell, Shield, HelpCircle } from 'lucide-react'
+import { User, Mail, Phone, MapPin, Bell, Shield, HelpCircle } from 'lucide-react'
 
 export default function ProfilePage() {
   const [userInfo, setUserInfo] = useState({
