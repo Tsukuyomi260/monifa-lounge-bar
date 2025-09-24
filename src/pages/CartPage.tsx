@@ -13,14 +13,12 @@ export default function CartPage() {
     customerInfo,
     updateQuantity, 
     removeItem, 
-    updateNotes,
     setOrderType,
     updateCustomerInfo,
     setOrderNotes,
     getSubtotal,
     getDeliveryFee,
-    getTotal,
-    clearCart
+    getTotal
   } = useCartStore()
 
   const handleQuantityChange = (productId: string, newQuantity: number) => {

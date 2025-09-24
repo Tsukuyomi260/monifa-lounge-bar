@@ -46,7 +46,7 @@ export default function BottomNavigation() {
       {/* Dock Container avec effet frosted glass */}
       <div className="bg-black/20 backdrop-blur-xl border border-white/10 rounded-full px-4 py-3 shadow-2xl">
         <div className="flex items-center justify-around relative">
-          {navigationItems.map((item, index) => {
+          {navigationItems.map((item) => {
             const isActive = location.pathname === item.href
             const Icon = item.icon
             const badgeCount = item.showBadge ? getTotalItems() : 0

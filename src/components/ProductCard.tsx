@@ -24,10 +24,7 @@ export default function ProductCard({
 }: ProductCardProps) {
   const [isAdding, setIsAdding] = useState(false)
   const [selectedQuantity, setSelectedQuantity] = useState(1)
-  const { addItem, removeItem, items } = useCartStore()
-  
-  const cartItem = items.find(item => item.product.id === product.id)
-  const quantity = cartItem?.quantity || 0
+  const { addItem } = useCartStore()
 
   const handleAddToCart = async () => {
     if (isAdding) return
@@ -51,19 +48,6 @@ export default function ProductCard({
     }
   }
 
-  const handleIncrement = () => {
-    addItem(product, 1)
-    toast.success(`${product.name} ajouté au panier`)
-  }
-
-  const handleDecrement = () => {
-    if (quantity > 1) {
-      addItem(product, -1)
-    } else {
-      removeItem(product.id)
-      toast.success(`${product.name} retiré du panier`)
-    }
-  }
 
   const handleToggleFavorite = () => {
     onToggleFavorite?.(product.id)

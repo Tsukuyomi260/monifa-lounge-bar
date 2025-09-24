@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { Clock, CheckCircle, XCircle } from 'lucide-react'
 import { formatPrice, formatDate } from '../utils/helpers'
 
@@ -27,7 +26,6 @@ const mockOrders = [
 ]
 
 export default function OrdersPage() {
-  const [selectedOrder, setSelectedOrder] = useState<string | null>(null)
 
   const getStatusIcon = (status: string) => {
     switch (status) {

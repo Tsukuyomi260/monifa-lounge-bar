@@ -1,6 +1,5 @@
 import { useSearchParams, useNavigate } from 'react-router-dom'
 import { CheckCircle, Clock, MapPin, Phone } from 'lucide-react'
-import { formatPrice } from '../utils/helpers'
 
 export default function OrderConfirmationPage() {
   const [searchParams] = useSearchParams()

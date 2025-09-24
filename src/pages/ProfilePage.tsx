@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { User, Mail, Phone, MapPin, Bell, Shield, HelpCircle } from 'lucide-react'
 
 export default function ProfilePage() {
-  const [userInfo, setUserInfo] = useState({
+  const [userInfo] = useState({
     name: 'AVOCE Patrick',
     email: 'patrickacv@gmail.com',
     phone: '+229 67234684',
